@@ -1,0 +1,16 @@
+<template name="listTj">
+    <view class="tj-item">
+        <view class="tj-block">
+            <view class="tj-item-top">
+                <image src="https://file.boxuegu.com/e6432db4d06c42b9aca7aede22ba9437.jpg" />
+            </view>
+            <view class="tj-item-last">
+                <view class="tj-head">所有人都能学的数据...</view>
+                <view class="tj-last">
+                    <view>710人学习</view>
+                    <view class="tj-mony">￥399.00</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

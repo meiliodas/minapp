@@ -1,0 +1,15 @@
+<template name="list">
+  <view class="list-item">
+    <view class="list-item-left">
+      <image src="https://file.boxuegu.com/3940be1c755a44eeb8e2e0aaf984756e.png" />
+    </view>
+    <view class="list-item-right">
+      <view class="list-head">PHP基础</view>
+      <view class="list-zw">你好吗，现在好当了，我零用十二月份寺零用仍仍零用</view>
+      <view>
+        <view>12321312人学习</view>
+        <view class="list-mony">￥113213.00</view>
+      </view>
+    </view>
+  </view>
+</template>

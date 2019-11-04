@@ -1,0 +1,16 @@
+<template name="listFree">
+    <view class="tj-item">
+        <view class="tj-block">
+            <view class="tj-item-top">
+                <image src="https://file.boxuegu.com/74773be265b840b3af9da88f6f42841d.jpg" />
+            </view>
+            <view class="tj-item-last">
+                <view class="tj-head">2小时用Go语言实现...</view>
+                <view class="tj-last">
+                    <view>710人学习</view>
+                    <view class="tj-mony">免费</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
