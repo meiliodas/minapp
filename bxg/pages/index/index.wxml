@@ -1,13 +1,31 @@
-<import  src="/public/tmpl/list.wxml" />
-<import  src="/public/tmpl/listTj.wxml" />
-<import  src="/public/tmpl/listFree.wxml" />
+<import src="/public/tmpl/list.wxml" />
+<import src="/public/tmpl/listTj.wxml" />
+<import src="/public/tmpl/listFree.wxml" />
 <view class="head">
-    <view><image class="tra" src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png" /></view>
-    <view><image class="search" src="https://m.boxuegu.com/_nuxt/img/search.f2a123d.png" /></view>
+  <view>
+    <image class="tra" src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png" />
+  </view>
+  <view>
+    <image class="search" src="https://m.boxuegu.com/_nuxt/img/search.f2a123d.png" />
+  </view>
 </view>
-<view>
-  <image class="nav" src="https://attachment-center.boxuegu.com/data/picture/online/2019/09/04/14/a8759cfb1aee4ea6819a6ba13e425412.jpg" />
-</view>
+<swiper indicator-dots="{{true}}" indicator-active-color="#666" indicator-color="rgba(0, 0, 0, .3)" autoplay="{{true}}" interval="5000" duration="500" circular="{{true}}">
+  <swiper-item>
+    <view>
+      <image class="nav" src="https://attachment-center.boxuegu.com/data/picture/online/2019/09/04/14/a8759cfb1aee4ea6819a6ba13e425412.jpg" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image class="nav" src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/027d44b8c1f34fdfb655ec87157f7520.jpg" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view>
+      <image class="nav" src="https://attachment-center.boxuegu.com/data/picture/online/2019/10/24/19/727b801043714688aadc6e99bc393280.jpg" />
+    </view>
+  </swiper-item>
+</swiper>
 <view class="icon-list">
   <block wx:for="{{[1,2,3,4]}}" wx:key="for">
     <view>
@@ -20,7 +38,10 @@
 <!-- 就业课列表 -->
 <view class="list">
   <view class="list-nav">
-    <view>就业课</view>
+    <view>
+      <view class="shuxian"></view>
+      就业课
+    </view>
     <view>更多</view>
   </view>
   <!-- 模板 -->
@@ -28,31 +49,35 @@
     <template is="list" />
   </block>
 </view>
-
 <!-- 推荐课列表 -->
 <view class="list">
   <view class="list-nav">
-    <view>推荐课程</view>
+    <view>
+      <view class="shuxian"></view>
+      推荐课程
+    </view>
     <view>更多</view>
   </view>
   <!-- 模板 -->
   <view class="tj">
-  <block wx:for="{{[1,2,3,4]}}" wx:key="bb">
-    <template is="listTj" />
-  </block>
+    <block wx:for="{{[1,2,3,4]}}" wx:key="bb">
+      <template is="listTj" />
+    </block>
   </view>
 </view>
-
 <!-- 免费课 -->
 <view class="list">
   <view class="list-nav">
-    <view>免费课</view>
+    <view>
+      <view class="shuxian"></view>
+      免费课
+    </view>
     <view>更多</view>
   </view>
   <!-- 模板 -->
   <view class="tj">
-  <block wx:for="{{[1,2,3,4]}}" wx:key="bb">
-    <template is="listFree" />
-  </block>
+    <block wx:for="{{[1,2,3,4]}}" wx:key="bb">
+      <template is="listFree" />
+    </block>
   </view>
 </view>
